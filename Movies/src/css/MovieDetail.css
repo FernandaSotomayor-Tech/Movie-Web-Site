@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container-movieDetail {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 24px;
+  background-color: #121212;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  margin-top: 70px;
+}
+
+.container2-movieDetail {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.movie-detail {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.img-detail {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+.container-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.h2-detail {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 0;
+  color: #ffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+}
+
+.release-date,
+.sipnosis,
+.container-details h3 {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.strong-sipnosis,
+.span-h3,
+.strong-date {
+  color: #af1adc;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+.back-button {
+  background-color: #af1adc;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 20%;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+}
+
+.back-button:hover {
+   background-color: #ee86f5 ;
+}
+
+
+.container-releaseDate {
+  border: 1px solid rgba(132, 130, 130, 0.228);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+.container-sipnosis {
+  border: 1px solid rgba(132, 130, 130, 0.228);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+@media(max-width:768px) {
+     .movie-detail {
+      flex-direction: column;
+     }
+
+     
+  }

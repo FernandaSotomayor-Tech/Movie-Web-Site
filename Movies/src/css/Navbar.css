@@ -1,0 +1,77 @@
+@font-face {
+  font-family: Bold;
+  src: url(../fonts/THEBOLDFONT-FREEVERSION.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container {
+  position: fixed;       /* ✅ Hace que el navbar quede fijo arriba */
+  top: 0;                /* ✅ Lo posiciona en el borde superior */
+  left: 0;
+  right: 0;
+  z-index: 1000;         /* ✅ Se asegura de que esté por encima del resto */
+  display: flex;
+  justify-content: space-between;  /* ✅ Acomoda logo a la izquierda e input a la derecha */
+  align-items: center;
+  padding: 0 40px;
+  height: 80px;
+  background-color: #121212;
+  box-shadow: 0 2px 2px -2px rgba(151, 147, 147, 0.2);
+  flex-wrap: wrap;
+}
+
+
+.logo {
+  font-family: bold;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input {
+  box-shadow: 0 0 8px 2px rgba(185, 40, 224, 0.484);
+  transition: box-shadow 0.3s ease;
+  outline: none;
+  background-color: #191919;
+  color: white;
+  font-family: 'Roboto';
+  font-size: 17px;
+  padding: 12px;
+  width: 315px;
+  border: none;
+  border-radius: 10px;
+}
+
+.search-button {
+  background-color: #af1adc;
+  border: none;
+  padding: 12px;
+  color: white;
+  border-radius: 10px;
+  transition: 0.3s all ease-in;
+}
+
+
+@media (max-width: 768px) {
+.container {
+    padding: 30px;
+    height: 100px;
+  }
+
+  .input {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .search-button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+} 
