@@ -1,0 +1,37 @@
+# Archivo: .github/workflows/static.yml (o el nombre que tenga en la URL)
+
+name: Deploy React Project
+
+on:
+  push:
+    branches:
+      - main # O la rama donde tienes tu código React (master, develop, etc.)
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Paso 1: Instalar Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Puedes usar '18', '20' o la versión que necesites
+
+      # Paso 2: Instalar dependencias
+      - name: Install dependencies
+        run: npm install
+
+      # Paso 3: Construir el proyecto (Generar la carpeta 'build')
+      - name: Build project
+        run: npm run build
+
+      # Paso 4: Desplegar la carpeta 'build' a GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build # Esto le dice a GitHub que publique el contenido de la carpeta 'build'
