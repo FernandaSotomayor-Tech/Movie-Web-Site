@@ -1,5 +1,13 @@
 {
+  "name": "movie-web-site",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "fast-average-color": "^9.5.0"
+    "fast-average-color": "^9.5.0",
+   
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
   }
 }
