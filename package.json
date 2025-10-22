@@ -1,15 +1,13 @@
 {
-  "name": "movie-web-site", 
-  "homepage": "https://fernandasotomayor.github.io/Movie-Web-Site/",  <-- ¡Esta es la línea clave!
+  "name": "movie-web-site",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "fast-average-color": "^9.5.0",
-    // ... otras dependencias que tengas
+   
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    // ... otros scripts
   }
 }
